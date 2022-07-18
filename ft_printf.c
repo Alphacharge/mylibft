@@ -6,7 +6,7 @@
 /*   By: rbetz <rbetz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/14 10:38:56 by rbetz             #+#    #+#             */
-/*   Updated: 2022/06/02 09:28:09 by rbetz            ###   ########.fr       */
+/*   Updated: 2022/07/18 15:12:48 by rbetz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ int	ft_flaghandling(char c, va_list args)
 	else if (c == 's')
 		return (ft_putstr_fd_l(va_arg(args, char *), 1, c));
 	else if (c == 'i' || c == 'd')
-		return (ft_putstr_fd_l(ft_litoa(va_arg(args, int)), 1, c));
+		return (ft_putstr_fd_l(ft_litoa(va_arg(args, long)), 1, c));
 	else if (c == 'u')
 		return (ft_putstr_fd_l(ft_litoa(va_arg(args, unsigned int)), 1, c));
 	else if (c == 'x' || c == 'X')

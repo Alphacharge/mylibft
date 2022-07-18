@@ -6,7 +6,7 @@
 /*   By: rbetz <rbetz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 11:33:22 by rbetz             #+#    #+#             */
-/*   Updated: 2022/07/18 14:59:11 by rbetz            ###   ########.fr       */
+/*   Updated: 2022/07/18 15:33:06 by rbetz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,7 @@ char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_itoa(int n);
 char	*ft_ltoa(long n);
 char	**ft_split(char const *s, char c);
+int		ft_wordcount(char const *s, char c);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 void	ft_putchar_fd(char c, int fd);
@@ -94,4 +95,9 @@ int		ft_posinset(char const c, char const *ptr);
 void	*hack_and_stack(char *line, char **cur_line, char **str_ret, int *pos);
 void	*read_and_join(char *line, char **cur_line, const int fd, int *ret);
 char	*ft_strjoin_ns(char *s1, char *s2);
+
+//own functions from push_swap
+int		strisdigit(char *str);
+char	*ft_strstr(const char *haystack, const char *needle);
+void	ft_strreplace(char *str, char *tofind, char *replace);
 #endif

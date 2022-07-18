@@ -6,7 +6,7 @@
 /*   By: rbetz <rbetz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 17:27:07 by rbetz             #+#    #+#             */
-/*   Updated: 2022/07/18 14:52:50 by rbetz            ###   ########.fr       */
+/*   Updated: 2022/07/18 15:54:56 by rbetz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,22 +18,6 @@ static long	ft_isspace(char c)
 		|| c == '\r' || c == '\n' || c == ' ')
 		return (1);
 	return (0);
-}
-
-static int	strisdigit(char *str)
-{
-	int	i;
-
-	i = 0;
-	if (str == NULL)
-		return (0);
-	while (str[i] != '\0')
-	{
-		if (str[i] < '0' || str[i] > '9')
-			return (0);
-		i++;
-	}
-	return (1);
 }
 
 long	ft_atol(char *str)

@@ -6,7 +6,7 @@
 #    By: rbetz <rbetz@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/25 14:21:20 by rbetz             #+#    #+#              #
-#    Updated: 2022/07/18 15:00:09 by rbetz            ###   ########.fr        #
+#    Updated: 2022/07/18 15:53:58 by rbetz            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ SRC = ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c \
 		ft_strrchr.c ft_strtrim.c ft_substr.c ft_tolower.c ft_toupper.c \
 		ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c ft_lstdelone.c \
 		ft_lstiter.c ft_lstlast.c ft_lstmap.c ft_lstnew.c ft_lstsize.c \
-		ft_atol.c ft_ltoa.c
+		ft_atol.c ft_ltoa.c ft_strstr.c ft_strreplace.c ft_strisdigit.c \
 		ft_printf.c ft_printflibft.c get_next_line_bonus.c get_next_line_utils_bonus.c
 
 SRCOBJ=$(SRC:.c=.o)

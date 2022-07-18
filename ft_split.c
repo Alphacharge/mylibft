@@ -6,7 +6,7 @@
 /*   By: rbetz <rbetz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/07 14:19:54 by rbetz             #+#    #+#             */
-/*   Updated: 2022/04/13 14:23:34 by rbetz            ###   ########.fr       */
+/*   Updated: 2022/07/18 15:15:55 by rbetz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ static char	*ft_copy(const char *s, int i, int j)
 	return (p);
 }
 
-static int	ft_wordcount(char const *s, char c)
+int	ft_wordcount(char const *s, char c)
 {
 	int	i;
 	int	words;

@@ -6,7 +6,7 @@
 /*   By: rbetz <rbetz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 17:27:07 by rbetz             #+#    #+#             */
-/*   Updated: 2022/07/18 15:54:56 by rbetz            ###   ########.fr       */
+/*   Updated: 2022/09/19 11:35:46 by rbetz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ long	ft_atol(char *str)
 	}
 	else if (*str == '+')
 		str++;
-	if (!strisdigit(str))
+	if (!ft_strisdigit(str))
 		return ((long)(INT32_MIN) - 1);
 	while (ft_isdigit(*str))
 	{

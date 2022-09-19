@@ -6,7 +6,7 @@
 /*   By: rbetz <rbetz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 11:33:22 by rbetz             #+#    #+#             */
-/*   Updated: 2022/07/18 15:33:06 by rbetz            ###   ########.fr       */
+/*   Updated: 2022/09/19 11:32:51 by rbetz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,7 +97,11 @@ void	*read_and_join(char *line, char **cur_line, const int fd, int *ret);
 char	*ft_strjoin_ns(char *s1, char *s2);
 
 //own functions from push_swap
-int		strisdigit(char *str);
+int		ft_strisdigit(char *str);
 char	*ft_strstr(const char *haystack, const char *needle);
 void	ft_strreplace(char *str, char *tofind, char *replace);
+
+//own functions from pipex
+char	*ft_first_word(const char *str, char c, int rev);
+
 #endif

@@ -6,13 +6,13 @@
 /*   By: rbetz <rbetz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 15:27:38 by rbetz             #+#    #+#             */
-/*   Updated: 2022/07/18 15:57:22 by rbetz            ###   ########.fr       */
+/*   Updated: 2022/09/19 11:32:56 by rbetz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	strisdigit(char *str)
+int	ft_strisdigit(char *str)
 {
 	int	i;
 

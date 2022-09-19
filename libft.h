@@ -6,7 +6,7 @@
 /*   By: rbetz <rbetz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 11:33:22 by rbetz             #+#    #+#             */
-/*   Updated: 2022/09/19 11:32:51 by rbetz            ###   ########.fr       */
+/*   Updated: 2022/09/19 11:38:10 by rbetz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,7 +85,7 @@ int		ft_putstr_fd_l(char *s, int fd, char c);
 
 //getnextline
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 10
+#  define BUFFER_SIZE 1024
 # endif
 
 //getnextline

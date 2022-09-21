@@ -6,15 +6,19 @@
 /*   By: rbetz <rbetz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/24 13:33:24 by rbetz             #+#    #+#             */
-/*   Updated: 2022/03/24 19:12:21 by rbetz            ###   ########.fr       */
+/*   Updated: 2022/09/21 14:54:36 by rbetz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_strlen(const char *s)
 {
 	int	i;
 
 	i = 0;
+	if (s == NULL)
+		return (0);
 	while (s[i] != '\0')
 	{
 		i++;

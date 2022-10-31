@@ -6,7 +6,7 @@
 /*   By: rbetz <rbetz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 10:31:29 by rbetz             #+#    #+#             */
-/*   Updated: 2022/10/31 11:14:37 by rbetz            ###   ########.fr       */
+/*   Updated: 2022/10/31 13:14:02 by rbetz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	if (p1 == NULL)
 		return (NULL);
 	ft_memcpy(p1, s1, (size_t)ft_strlen(s1));
-	ft_memcpy(&p1[ft_strlen(s1)], s2, (size_t)ft_strlen(s2)+1);
+	ft_memcpy(&p1[ft_strlen(s1)], s2, (size_t)ft_strlen(s2) + 1);
 	return (p1);
 }

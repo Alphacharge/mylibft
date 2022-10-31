@@ -6,12 +6,14 @@
 /*   By: rbetz <rbetz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 16:00:51 by rbetz             #+#    #+#             */
-/*   Updated: 2022/09/19 11:36:28 by rbetz            ###   ########.fr       */
+/*   Updated: 2022/10/31 10:46:43 by rbetz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*Returns a malloced string to first occurens of c in str from beginning*/
+/*or if rev = 1 from the end*/
 char	*ft_first_word(const char *str, char c, int rev)
 {
 	int		i;

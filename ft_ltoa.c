@@ -6,13 +6,13 @@
 /*   By: rbetz <rbetz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/07 09:39:00 by rbetz             #+#    #+#             */
-/*   Updated: 2022/07/18 14:58:29 by rbetz            ###   ########.fr       */
+/*   Updated: 2022/10/31 10:51:02 by rbetz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static long	ft_countdigs(long c)
+static long	ft_countdigits(long c)
 {
 	long	n;
 
@@ -33,7 +33,7 @@ char	*ft_ltoa(long n)
 	long	i;
 	long	vz;
 
-	i = ft_countdigs(n);
+	i = ft_countdigits(n);
 	vz = 0;
 	if (n < 0)
 		vz = 1;

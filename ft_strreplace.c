@@ -6,7 +6,7 @@
 /*   By: rbetz <rbetz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 15:32:03 by rbetz             #+#    #+#             */
-/*   Updated: 2022/07/18 15:57:12 by rbetz            ###   ########.fr       */
+/*   Updated: 2022/10/31 12:11:14 by rbetz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,6 @@ void	ft_strreplace(char *str, char *tofind, char *replace)
 	ft_strlcat(str, replace, ft_strlen(str) + ft_strlen(replace) + 1);
 	len += ft_strlen(tofind);
 	ft_strlcat(str, &tempstring[len], ft_strlen(tempstring) \
-		- ft_strlen(tofind) + ft_strlen(replace)+1);
+		- ft_strlen(tofind) + ft_strlen(replace) + 1);
 	free(tempstring);
 }

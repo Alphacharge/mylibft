@@ -6,7 +6,7 @@
 /*   By: rbetz <rbetz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 17:08:41 by rbetz             #+#    #+#             */
-/*   Updated: 2022/06/02 09:28:00 by rbetz            ###   ########.fr       */
+/*   Updated: 2022/10/31 10:53:18 by rbetz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,30 +56,30 @@ static int	ft_count(long c)
 	return (n);
 }
 
-char	*ft_litoa(long n)
-{
-	char	*p;
-	int		i;
-	int		vz;
+// char	*ft_litoa(long n)
+// {
+// 	char	*p;
+// 	int		i;
+// 	int		vz;
 
-	i = ft_count(n);
-	vz = 0;
-	if (n < 0)
-		vz = 1;
-	p = malloc(i + vz +1);
-	if (p == NULL)
-		return (NULL);
-	p[i + vz] = '\0';
-	if (vz == 1)
-		p[0] = '-';
-	while (i > 0)
-	{
-		if (vz == 1)
-			p[i + vz - 1] = (n % 10) * -1 + '0';
-		else
-			p[i + vz - 1] = n % 10 + '0';
-		n = n / 10;
-		i--;
-	}
-	return (p);
-}
+// 	i = ft_count(n);
+// 	vz = 0;
+// 	if (n < 0)
+// 		vz = 1;
+// 	p = malloc(i + vz +1);
+// 	if (p == NULL)
+// 		return (NULL);
+// 	p[i + vz] = '\0';
+// 	if (vz == 1)
+// 		p[0] = '-';
+// 	while (i > 0)
+// 	{
+// 		if (vz == 1)
+// 			p[i + vz - 1] = (n % 10) * -1 + '0';
+// 		else
+// 			p[i + vz - 1] = n % 10 + '0';
+// 		n = n / 10;
+// 		i--;
+// 	}
+// 	return (p);
+// }

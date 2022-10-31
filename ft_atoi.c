@@ -6,7 +6,7 @@
 /*   By: rbetz <rbetz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 17:27:07 by rbetz             #+#    #+#             */
-/*   Updated: 2022/04/06 17:18:57 by rbetz            ###   ########.fr       */
+/*   Updated: 2022/10/31 09:56:35 by rbetz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,9 +41,9 @@ int	ft_atoi(const char *str)
 	while (ft_isdigit(*str))
 	{
 		c = c * 10 + *(str++) - '0';
-		if (c > 2147483648 && vz == -1)
+		if (c > INT32_MAX && vz == -1)
 			return (0);
-		else if (c > 2147483647 && vz == 1)
+		else if (c > (INT32_MAX - 1) && vz == 1)
 			return (-1);
 	}
 	return ((int)(c * vz));

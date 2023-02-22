@@ -6,7 +6,7 @@
 /*   By: rbetz <rbetz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 11:33:22 by rbetz             #+#    #+#             */
-/*   Updated: 2022/09/19 11:38:10 by rbetz            ###   ########.fr       */
+/*   Updated: 2023/02/22 11:28:28 by rbetz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <unistd.h>
 # include <stdint.h>
 # include <stdarg.h>
+# include <stdbool.h>
 
 typedef struct s_list
 {
@@ -104,4 +105,24 @@ void	ft_strreplace(char *str, char *tofind, char *replace);
 //own functions from pipex
 char	*ft_first_word(const char *str, char c, int rev);
 
+//own functions from minishell
+# ifndef READ
+#  define READ 0
+# endif
+# ifndef WRITE
+#  define WRITE 1
+# endif
+# ifndef FD_UNUSED
+#  define FD_UNUSED INT32_MIN
+# endif
+
+int		ft_arraycount(char **array);
+char	*ft_last_word(const char *str, char c, int rev);
+int		ft_strcmp(char *s1, char *s2);
+char	*multijoin(bool tofr, int n, ...);
+char	*ft_multijoin_array(char **array);
+void	ft_free_multiple(int n, ...);
+void	*ft_free_array(void **array);
+void	ft_close_and_neg(int *fd);
+void	ft_close_pipe_fds(int pipe[2]);
 #endif

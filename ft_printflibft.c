@@ -6,7 +6,7 @@
 /*   By: rbetz <rbetz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 17:08:41 by rbetz             #+#    #+#             */
-/*   Updated: 2022/10/31 10:53:18 by rbetz            ###   ########.fr       */
+/*   Updated: 2023/02/22 11:29:29 by rbetz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,20 +41,20 @@ int	ft_putchar_fd_l(char c, int fd)
 	return (1);
 }
 
-static int	ft_count(long c)
-{
-	int	n;
+// static int	ft_count(long c)
+// {
+// 	int	n;
 
-	n = 0;
-	if (c == 0)
-		return (1);
-	while (c != 0)
-	{
-		c = c / 10;
-		n++;
-	}
-	return (n);
-}
+// 	n = 0;
+// 	if (c == 0)
+// 		return (1);
+// 	while (c != 0)
+// 	{
+// 		c = c / 10;
+// 		n++;
+// 	}
+// 	return (n);
+// }
 
 // char	*ft_litoa(long n)
 // {

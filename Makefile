@@ -6,7 +6,7 @@
 #    By: rbetz <rbetz@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/25 14:21:20 by rbetz             #+#    #+#              #
-#    Updated: 2023/02/22 13:31:09 by rbetz            ###   ########.fr        #
+#    Updated: 2023/02/24 10:44:28 by rbetz            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,10 +46,10 @@ BLUE = \033[1;34m
 WHITE = \033[0m
 
 ###			###			RULES			###			###
-all: $(NAME)
+all: $(OBJ_D) $(NAME)
 
-$(NAME): $(OBJ_D) $(SRCOBJ)
-	@ar -rcs $(NAME) $@
+$(NAME): $(SRCOBJ)
+	@ar -rcs $(NAME) $^
 	@echo "$(RED)--->$(BLUE)Libft is compiled.$(WHITE)"
 
 $(OBJ_D)/%.o: %.c message

@@ -14,7 +14,7 @@ make
 ## Content
 It contains following functions.
 
-###From libft:
+### From libft:
 - ft_isalnum
 - ft_isalpha
 - ft_isascii
@@ -63,7 +63,7 @@ It contains following functions.
 - ft_lstmap
 - ft_lstclear
 
-###From printf:
+### From printf:
 - ft_printf
 - ft_loop_format
 - ft_flaghandling
@@ -73,7 +73,7 @@ It contains following functions.
 - ft_putchar_fd_l
 - ft_putstr_fd_l
 
-###From getnextline:
+### From getnextline:
 - get_next_line
 - freeme
 - ft_posinset
@@ -81,15 +81,15 @@ It contains following functions.
 - read_and_join
 - ft_strjoin_ns
 
-###From push_swap:
+### From push_swap:
 - ft_strisdigit
 - ft_strstr
 - ft_strreplace
 
-###From pipex:
+### From pipex:
 - ft_first_word
 
-###From minishell:
+### From minishell:
 - ft_arraycount
 - ft_last_word
 - ft_strcmp

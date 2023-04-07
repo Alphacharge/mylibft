@@ -6,7 +6,7 @@
 #    By: rbetz <rbetz@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/25 14:21:20 by rbetz             #+#    #+#              #
-#    Updated: 2023/02/24 10:44:28 by rbetz            ###   ########.fr        #
+#    Updated: 2023/04/07 13:43:35 by rbetz            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,6 +33,7 @@ SRC		+=	ft_first_word.c ft_last_word.c
 SRC		+=	ft_arraycount.c ft_free_array.c ft_multijoin_array.c
 SRC		+=	ft_close.c ft_strcmp.c
 SRC		+=	ft_free_multiple.c ft_multijoin.c
+SRC		+=	ft_atod.c ft_split_p.c ft_isspace.c
 
 ###			###			OBJECTS			###			###
 OBJ_D	:=	./obj

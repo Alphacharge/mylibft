@@ -6,7 +6,7 @@
 /*   By: rbetz <rbetz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 11:33:22 by rbetz             #+#    #+#             */
-/*   Updated: 2023/02/22 11:28:28 by rbetz            ###   ########.fr       */
+/*   Updated: 2023/04/07 13:43:19 by rbetz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -125,4 +125,9 @@ void	ft_free_multiple(int n, ...);
 void	*ft_free_array(void **array);
 void	ft_close_and_neg(int *fd);
 void	ft_close_pipe_fds(int pipe[2]);
+
+//own functions from miniRT
+double	ft_atod(char *nbr);
+char	**ft_split_p(char *s, char c);
+int		ft_isspace(int c);
 #endif

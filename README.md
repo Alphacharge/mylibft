@@ -1,20 +1,20 @@
 # 42 libft Project
-This is a basic C Library devloped with the 42 libft subject and updated through other 42 projects.
+This is a basic C library devloped with the 42 libft subject and updated through other 42 projects.
 
-It contains basic functions to create and manipulate mostly Strings.
+It contains basic functions to create and manipulate mostly strings.
 
 ## Installation
-This project should compile a Library under Mac OS and Unix:
+This project should compile a library under Mac OS and Unix:
 ```
 git clone https://github.com/Alphacharge/mylibft.git
 cd mylibft
 make
 ```
 
-## Describtion
+## Content
 It contains following functions.
 
-From libft:
+### From libft:
 - ft_isalnum
 - ft_isalpha
 - ft_isascii
@@ -63,7 +63,7 @@ From libft:
 - ft_lstmap
 - ft_lstclear
 
-From printf:
+### From printf:
 - ft_printf
 - ft_loop_format
 - ft_flaghandling
@@ -73,7 +73,7 @@ From printf:
 - ft_putchar_fd_l
 - ft_putstr_fd_l
 
-From getnextline:
+### From getnextline:
 - get_next_line
 - freeme
 - ft_posinset
@@ -81,15 +81,15 @@ From getnextline:
 - read_and_join
 - ft_strjoin_ns
 
-From push_swap:
+### From push_swap:
 - ft_strisdigit
 - ft_strstr
 - ft_strreplace
 
-From pipex:
+### From pipex:
 - ft_first_word
 
-From minishell:
+### From minishell:
 - ft_arraycount
 - ft_last_word
 - ft_strcmp

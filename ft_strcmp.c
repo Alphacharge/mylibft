@@ -16,21 +16,20 @@
 /*returns 0 if there is no difference*/
 int	ft_strcmp(char *s1, char *s2)
 {
-	int	len1;
-	int	len2;
 	int	i;
 
-	if (s1 == NULL || s2 == NULL)
-		return (-1);
-	len1 = ft_strlen(s1);
-	len2 = ft_strlen(s2);
-	i = 0;
-	if (len1 != len2)
-		return (len1 - len2);
-	while (s1[i] != '\0' && s2[i] != '\0' && s1[i] == s2[i])
-		i++;
-	if (s1[i] == '\0')
+	if (s1 == NULL && s2 == NULL)
 		return (0);
-	else
-		return (s1[i] - s2[i]);
+	else if (s1 == NULL)
+		return (-1);
+	else if (s2 == NULL)
+		return (1);
+	i = 0;
+	while (s1[i] != '\0' && s2[i] != '\0')
+	{
+		if (s1[i] != s2[i])
+			return (s1[i] - s2[i]);
+		i++;
+	}
+	return (s1[i] - s2[i]);
 }

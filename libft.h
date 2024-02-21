@@ -119,7 +119,7 @@ char	*ft_first_word(const char *str, char c, int rev);
 int		ft_arraycount(char **array);
 char	*ft_last_word(const char *str, char c, int rev);
 int		ft_strcmp(char *s1, char *s2);
-char	*multijoin(bool tofr, int n, ...);
+char	*ft_multijoin(bool tofr, int n, ...);
 char	*ft_multijoin_array(char **array);
 void	ft_free_multiple(int n, ...);
 void	*ft_free_array(void **array);

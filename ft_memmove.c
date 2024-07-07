@@ -29,7 +29,7 @@ static void	ft_move(char *a, char *b, size_t v)
 	{
 		while (v > 0)
 		{
-			a[v -1] = b[v -1];
+			a[v - 1] = b[v - 1];
 			v--;
 		}
 	}
@@ -43,8 +43,6 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	d = (char *)dst;
 	s = (char *)src;
 	if (len > 0 && (dst != NULL || src != NULL))
-	{
 		ft_move(d, s, len);
-	}
 	return (dst);
 }

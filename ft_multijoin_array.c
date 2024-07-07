@@ -68,5 +68,6 @@ char	*ft_multijoin_array(char **array)
 	str = copy_input(array, lengths, len);
 	free(lengths);
 	free(array);
+	array = NULL;
 	return (str);
 }

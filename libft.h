@@ -53,8 +53,8 @@ void	*ft_calloc(size_t count, size_t size);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
-char	*ft_itoa(int n);
-char	*ft_ltoa(long n);
+char	*ft_itoa(int nbr);
+char	*ft_ltoa(long nbr);
 char	**ft_split(char const *s, char c);
 int		ft_wordcount(char const *s, char c);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
@@ -103,7 +103,7 @@ char	*ft_strstr(const char *haystack, const char *needle);
 void	ft_strreplace(char *str, char *tofind, char *replace);
 
 //own functions from pipex
-char	*ft_first_word(const char *str, char c, int rev);
+char	*ft_first_word(const char *str, char limiter, int rev);
 
 //own functions from minishell
 # ifndef READ
@@ -117,7 +117,7 @@ char	*ft_first_word(const char *str, char c, int rev);
 # endif
 
 int		ft_arraycount(char **array);
-char	*ft_last_word(const char *str, char c, int rev);
+char	*ft_last_word(const char *str, char limiter, int rev);
 int		ft_strcmp(char *s1, char *s2);
 char	*ft_multijoin(bool tofr, int n, ...);
 char	*ft_multijoin_array(char **array);

@@ -14,17 +14,17 @@
 
 long	ft_atol(char *str)
 {
-	long			vz;
-	unsigned long	c;
+	long			sign;
+	unsigned long	nbr;
 
-	vz = 1;
-	c = 0;
+	sign = 1;
+	nbr = 0;
 	while (ft_isspace(*str))
 		str++;
 	if (*str == '-')
 	{
 		str++;
-		vz = -1;
+		sign = -1;
 	}
 	else if (*str == '+')
 		str++;
@@ -32,11 +32,11 @@ long	ft_atol(char *str)
 		return (0);
 	while (ft_isdigit(*str))
 	{
-		c = c * 10 + *(str++) - '0';
-		if (c > INT64_MAX && vz == -1)
+		nbr = nbr * 10 + *(str++) - '0';
+		if (nbr > INT64_MAX && sign == -1)
 			return (0);
-		else if (c > (INT64_MAX - 1) && vz == 1)
+		else if (nbr > (INT64_MAX - 1) && sign == 1)
 			return (-1);
 	}
-	return ((long)(c * vz));
+	return ((long)(nbr * sign));
 }

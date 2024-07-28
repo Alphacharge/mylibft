@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rbetz <rbetz@student.42.fr>                +#+  +:+       +#+        */
+/*   By: humbi <humbi@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 12:05:03 by rbetz             #+#    #+#             */
-/*   Updated: 2022/06/02 09:43:22 by rbetz            ###   ########.fr       */
+/*   Updated: 2024/07/11 20:06:36 by humbi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,9 @@ void	*read_and_join(char *line, char **cur_line, const int fd, int *ret)
 	while (ft_posinset('\n', *cur_line) == -1)
 	{
 		*ret = read(fd, line, BUFFER_SIZE);
-		line[*ret] = '\0';
 		if (*ret <= 0)
 			break ;
+		line[*ret] = '\0';
 		*cur_line = ft_strjoin_ns(*cur_line, line);
 		if (*cur_line == NULL)
 			return (NULL);

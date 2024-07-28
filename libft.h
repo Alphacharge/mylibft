@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rbetz <rbetz@student.42.fr>                +#+  +:+       +#+        */
+/*   By: humbi <humbi@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 11:33:22 by rbetz             #+#    #+#             */
-/*   Updated: 2023/04/07 13:43:19 by rbetz            ###   ########.fr       */
+/*   Updated: 2024/07/11 19:58:44 by humbi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -130,4 +130,7 @@ void	ft_close_pipe_fds(int pipe[2]);
 double	ft_atod(char *nbr);
 char	**ft_split_p(char *s, char c);
 int		ft_isspace(int c);
+
+//new functions after core
+char	*ft_strreplace_first(char *str, char *tofind, char *replace);
 #endif

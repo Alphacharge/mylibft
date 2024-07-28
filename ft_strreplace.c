@@ -12,12 +12,11 @@
 
 #include "libft.h"
 
-
 // This function replaces the first occurrence of 'tofind' with 'replace'
 // in 'str'. It modifies the original string 'str' in place. Note: This
 // implementation is not safe if 'replace' is longer than 'tofind', as
 // it does not allocate additional memory to accommodate a longer
-// replacement string.
+// replacement string. Use ft_strreplace_first instead.
 void	ft_strreplace(char *str, char *tofind, char *replace)
 {
 	char	*tempstring;

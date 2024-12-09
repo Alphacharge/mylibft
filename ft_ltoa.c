@@ -12,45 +12,45 @@
 
 #include "libft.h"
 
-static long	ft_countdigits(long c)
+static long	ft_countdigits(long nbr)
 {
 	long	n;
 
 	n = 0;
-	if (c == 0)
+	if (nbr == 0)
 		return (1);
-	while (c != 0)
+	while (nbr != 0)
 	{
-		c = c / 10;
+		nbr = nbr / 10;
 		n++;
 	}
 	return (n);
 }
 
-char	*ft_ltoa(long n)
+char	*ft_ltoa(long nbr)
 {
-	char	*p;
+	char	*str;
 	long	i;
-	long	vz;
+	long	sign;
 
-	i = ft_countdigits(n);
-	vz = 0;
-	if (n < 0)
-		vz = 1;
-	p = malloc(i + vz +1);
-	if (p == NULL)
+	i = ft_countdigits(nbr);
+	sign = 0;
+	if (nbr < 0)
+		sign = 1;
+	str = malloc(i + sign + 1);
+	if (str == NULL)
 		return (NULL);
-	p[i + vz] = '\0';
-	if (vz == 1)
-		p[0] = '-';
+	str[i + sign] = '\0';
+	if (sign == 1)
+		str[0] = '-';
 	while (i > 0)
 	{
-		if (vz == 1)
-			p[i + vz - 1] = (n % 10) * -1 + '0';
+		if (sign == 1)
+			str[i + sign - 1] = (nbr % 10) * -1 + '0';
 		else
-			p[i + vz - 1] = n % 10 + '0';
-		n = n / 10;
+			str[i + sign - 1] = nbr % 10 + '0';
+		nbr = nbr / 10;
 		i--;
 	}
-	return (p);
+	return (str);
 }

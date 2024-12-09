@@ -27,15 +27,15 @@ double	ft_atod(char *nbr)
 	double	res;
 	int		i;
 	int		j;
-	int		vz;
+	int		sign;
 
 	j = 1;
-	vz = 1;
+	sign = 1;
 	if (!nbr)
 		return (0);
-	res = ft_atoi(nbr);
+	res = ft_atol(nbr);
 	if (is_negativ(nbr))
-		vz = -1;
+		sign = -1;
 	while (*nbr && *nbr != '.')
 		nbr++;
 	if (*nbr == '.')
@@ -43,6 +43,6 @@ double	ft_atod(char *nbr)
 	i = ft_strlen(nbr);
 	while (i-- > 0)
 		j *= 10;
-	res += (double)ft_atoi(nbr) * vz / j;
+	res += (double)ft_atol(nbr) * sign / j;
 	return (res);
 }

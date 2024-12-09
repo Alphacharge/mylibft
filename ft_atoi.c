@@ -14,17 +14,17 @@
 
 int	ft_atoi(const char *str)
 {
-	int				vz;
-	unsigned int	c;
+	int				sign;
+	unsigned int	nbr;
 
-	vz = 1;
-	c = 0;
+	sign = 1;
+	nbr = 0;
 	while (ft_isspace(*str))
 		str++;
 	if (*str == '-')
 	{
 		str++;
-		vz = -1;
+		sign = -1;
 	}
 	else if (*str == '+')
 		str++;
@@ -32,11 +32,11 @@ int	ft_atoi(const char *str)
 		return (0);
 	while (ft_isdigit(*str))
 	{
-		c = c * 10 + *(str++) - '0';
-		if (c > INT32_MAX && vz == -1)
+		nbr = nbr * 10 + *(str++) - '0';
+		if (nbr > INT32_MAX && sign == -1)
 			return (0);
-		else if (c > (INT32_MAX - 1) && vz == 1)
+		else if (nbr > (INT32_MAX - 1) && sign == 1)
 			return (-1);
 	}
-	return ((int)(c * vz));
+	return ((int)(nbr * sign));
 }

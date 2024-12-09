@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rbetz <rbetz@student.42.fr>                +#+  +:+       +#+        */
+/*   By: humbi <humbi@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 11:33:22 by rbetz             #+#    #+#             */
-/*   Updated: 2023/04/07 13:43:19 by rbetz            ###   ########.fr       */
+/*   Updated: 2024/07/11 19:58:44 by humbi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,8 +53,8 @@ void	*ft_calloc(size_t count, size_t size);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
-char	*ft_itoa(int n);
-char	*ft_ltoa(long n);
+char	*ft_itoa(int nbr);
+char	*ft_ltoa(long nbr);
 char	**ft_split(char const *s, char c);
 int		ft_wordcount(char const *s, char c);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
@@ -103,7 +103,7 @@ char	*ft_strstr(const char *haystack, const char *needle);
 void	ft_strreplace(char *str, char *tofind, char *replace);
 
 //own functions from pipex
-char	*ft_first_word(const char *str, char c, int rev);
+char	*ft_first_word(const char *str, char limiter, int rev);
 
 //own functions from minishell
 # ifndef READ
@@ -117,7 +117,7 @@ char	*ft_first_word(const char *str, char c, int rev);
 # endif
 
 int		ft_arraycount(char **array);
-char	*ft_last_word(const char *str, char c, int rev);
+char	*ft_last_word(const char *str, char limiter, int rev);
 int		ft_strcmp(char *s1, char *s2);
 char	*ft_multijoin(bool tofr, int n, ...);
 char	*ft_multijoin_array(char **array);
@@ -130,4 +130,7 @@ void	ft_close_pipe_fds(int pipe[2]);
 double	ft_atod(char *nbr);
 char	**ft_split_p(char *s, char c);
 int		ft_isspace(int c);
+
+//new functions after core
+char	*ft_strreplace_first(char *str, char *tofind, char *replace);
 #endif

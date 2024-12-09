@@ -27,30 +27,30 @@ static int	ft_count(int c)
 	return (n);
 }
 
-char	*ft_itoa(int n)
+char	*ft_itoa(int nbr)
 {
-	char	*p;
+	char	*str;
 	int		i;
-	int		vz;
+	int		sign;
 
-	i = ft_count(n);
-	vz = 0;
-	if (n < 0)
-		vz = 1;
-	p = malloc(i + vz +1);
-	if (p == NULL)
+	i = ft_count(nbr);
+	sign = 0;
+	if (nbr < 0)
+		sign = 1;
+	str = malloc(i + sign + 1);
+	if (str == NULL)
 		return (NULL);
-	p[i + vz] = '\0';
-	if (vz == 1)
-		p[0] = '-';
+	str[i + sign] = '\0';
+	if (sign == 1)
+		str[0] = '-';
 	while (i > 0)
 	{
-		if (vz == 1)
-			p[i + vz - 1] = (n % 10) * -1 + '0';
+		if (sign == 1)
+			str[i + sign - 1] = (nbr % 10) * -1 + '0';
 		else
-			p[i + vz - 1] = n % 10 + '0';
-		n = n / 10;
+			str[i + sign - 1] = nbr % 10 + '0';
+		nbr = nbr / 10;
 		i--;
 	}
-	return (p);
+	return (str);
 }

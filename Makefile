@@ -47,7 +47,8 @@ BLUE = \033[1;34m
 WHITE = \033[0m
 
 ###			###			RULES			###			###
-all: $(OBJ_D) $(NAME)
+all: $(OBJ_D)
+	@$(MAKE) -j $(NAME)
 
 $(NAME): $(SRCOBJ)
 	@ar -rcs $(NAME) $^

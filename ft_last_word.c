@@ -14,26 +14,28 @@
 
 /*Returns a malloced string to last occurens of c in str from end*/
 /*or if rev = 1 from start to the lim*/
-char	*ft_last_word(const char *str, char c, int rev)
+char	*ft_last_word(const char *str, char limiter, int rev)
 {
 	int		i;
 	int		len;
 	char	*ret;
 
-	len = ft_strlen(str);
-	i = len;
 	if (str == NULL)
 		return (NULL);
-	if (c == '\0')
-		c = ' ';
+	len = ft_strlen(str);
+	i = len;
+	if (limiter == '\0')
+		limiter = ' ';
 	if (rev != 1)
 		rev = 0;
-	while (i >= 0 && str[i] != c)
+	while (i >= 0 && str[i] != limiter)
 		i--;
 	if (rev == 0)
 		ret = ft_calloc(len - i + 1, sizeof(char));
 	else
 		ret = ft_calloc(i, sizeof(char));
+	if (ret == NULL)
+		return (NULL);
 	if (rev == 0)
 		ft_memcpy(ret, &str[i + 1], len - i);
 	else

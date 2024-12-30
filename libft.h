@@ -133,4 +133,5 @@ int		ft_isspace(int c);
 
 //new functions after core
 char	*ft_strreplace_first(char *str, char *tofind, char *replace);
+char	*ft_strlower(char *str);
 #endif

@@ -31,7 +31,7 @@ SRC		+=	ft_printf.c ft_printflibft.c
 SRC		+=	get_next_line_bonus.c get_next_line_utils_bonus.c
 SRC		+=	ft_first_word.c ft_last_word.c
 SRC		+=	ft_arraycount.c ft_free_array.c ft_multijoin_array.c
-SRC		+=	ft_close.c ft_strcmp.c
+SRC		+=	ft_close.c ft_strcmp.c  ft_strlower.c
 SRC		+=	ft_free_multiple.c ft_multijoin.c
 SRC		+=	ft_atod.c ft_split_p.c ft_isspace.c
 
